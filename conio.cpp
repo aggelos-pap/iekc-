@@ -33,7 +33,7 @@ int main()
     // kai elegxei an einai lainkos kefalaios h oxi 
 
 
-    char hello = _getch();
+   
     /*if (int(hello) >= 65 && int(hello) <= 90)
     {
         cout << "Einai lat kefalaios" << endl;
@@ -43,9 +43,29 @@ int main()
         cout << "Den einai lat kefalaios" << endl;
     }*/
 
-    (int(hello) >= 65 && int(hello) <= 90) ? cout << "Einai lat " : cout << "Den einai";
+    //(int(hello) >= 65 && int(hello) <= 90) ? cout << "Einai lat " : cout << "Den einai";
  
-
+    //ngfp tha dexete ena char apto keyboard kai tha ton epekse ws ekshs
+    // an o char ienai pezos typwse ton 
+    // else if number 0-9 : emfanise patithike ena psifio 
+    // do nothing otherwise
+    
+    //97 - 122  48 - 57
+    char hello = _getch();
+    if (int(hello) >= 48 && int(hello) <= 57)
+    {
+        cout << "Patithike ena psifio!" << endl;
+    }
+    else if (int(hello) >= 97 && int(hello) <= 122)
+    {
+        _putch(hello);
+    }
+    else
+    {
+        cout << "Doing nothing as" << endl;
+    }
+ 
+   
 
 }
 
